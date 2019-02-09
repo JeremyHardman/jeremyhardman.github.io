@@ -26,7 +26,7 @@
 
   .herocontainer {
     max-width: 960px;
-    max-height: auto;
+    height: auto;
   }
 
   .hero-img img {
