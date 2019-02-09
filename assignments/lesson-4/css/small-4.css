@@ -12,7 +12,6 @@ body {
 }
 
 header {
-  /*display: inline-block;*/
   margin: 0 0 5px;
   padding: 0 0 3em;
   background-color: #2b3a67;
@@ -21,9 +20,14 @@ header {
   text-align: center;
 }
 
-#headings {
+.headings img {
   display: inline-block;
-  vertical-align: middle;
+  height: 25%;
+  width: 25%;
+  box-align: left;
+}
+#headings {
+  /* vertical-align: middle;*/
   margin: 10px;
 }
 

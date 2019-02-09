@@ -1,0 +1,35 @@
+@media (min-width: 720px) {
+  /*NAVIGATION*/
+  nav button,
+  nav a {
+    display: none;
+  }
+
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul.hidemenu {
+    text-align: center;
+    background-color: #67839b;
+    border-top: 2px solid #a7b3a5;
+  }
+
+  nav ul li a {
+    font-size: 1.3em;
+    text-align: center;
+    border: none;
+    border-right: 1px solid #a7b3a5;
+    padding: 0.8rem 1rem;
+  }
+
+  /*WEATHER MAIN SECTION*/
+
+  .herocontainer {
+    max-width: 960px;
+    max-height: auto;
+  }
+
+  .hero-img img {
+    max-width: 940px;
+  }
+}
