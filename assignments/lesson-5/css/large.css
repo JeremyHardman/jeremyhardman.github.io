@@ -32,4 +32,31 @@
   .hero-img img {
     max-width: 940px;
   }
+
+  /*Five Day Forcast*/
+  .five-day {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding: 1em;
+  }
+
+  .fd-title {
+    visibility: visible;
+    text-align: center;
+    background-color: white;
+  }
+
+  .five-day-th th {
+    border: 2px solid #67839b;
+    background-color: #b56357;
+    padding: 1em;
+  }
+
+  .five-day-td,
+  .five-day-degree {
+    text-align: center;
+  }
 }

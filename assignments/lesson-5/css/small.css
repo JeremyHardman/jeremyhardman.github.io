@@ -121,3 +121,11 @@ h1.townname {
 article {
   background-color: white;
 }
+
+.five-day {
+  display: none;
+}
+
+.fd-title {
+  visibility: hidden;
+}
