@@ -1,6 +1,5 @@
-@media (min-width: 720px) {
+@media (min-width: 840px) {
   /*NAVIGATION*/
-  /*
   nav button,
   nav a {
     display: none;
@@ -21,49 +20,17 @@
     border: none;
     border-right: 1px solid #a7b3a5;
     padding: 0.8rem 1rem;
-  }*/
-  /*
-????
-  .navigation li:first-child {
-    display: none;
-  }
-  .navigation li {
-    display: inline-block;
-  }
-  nav ul li a {
-    font-size: 1.3em;
-    text-align: center;
-    border: none;
-    border-right: 1px solid #a7b3a5;
-    padding: 0.8rem 1rem;
-  }
-
-  nav {
-    text-align: center;
-    background-color: #67839b;
-    border-top: 2px solid #a7b3a5;
-  }
-*/
-  .navigation li:first-child {
-    display: none;
-  }
-  .navigation li {
-    display: inline-block;
-    margin-right: 1rem;
-  }
-  .navigation li a {
-    color: yellow;
   }
 
   /*WEATHER MAIN SECTION*/
 
   .herocontainer {
-    max-width: 840px;
+    max-width: fit-content;
     height: auto;
   }
 
   .hero-img img {
-    max-width: 940px;
+    max-width: 800px;
   }
 
   /*Five Day Forcast*/

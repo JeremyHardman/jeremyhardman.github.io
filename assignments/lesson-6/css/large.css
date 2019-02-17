@@ -1,29 +1,16 @@
 @media (min-width: 720px) {
   /*NAVIGATION*/
-  /*
-  nav button,
-  nav a {
-    display: none;
+
+  main,
+  footer,
+  aside {
+    max-width: 900px;
+    margin: auto;
+  }
+  header h1 {
+    font-size: 3em;
   }
 
-  nav ul li {
-    display: inline-block;
-  }
-  nav ul.hidemenu {
-    text-align: center;
-    background-color: #67839b;
-    border-top: 2px solid #a7b3a5;
-  }
-
-  nav ul li a {
-    font-size: 1.3em;
-    text-align: center;
-    border: none;
-    border-right: 1px solid #a7b3a5;
-    padding: 0.8rem 1rem;
-  }*/
-  /*
-????
   .navigation li:first-child {
     display: none;
   }
@@ -42,17 +29,6 @@
     text-align: center;
     background-color: #67839b;
     border-top: 2px solid #a7b3a5;
-  }
-*/
-  .navigation li:first-child {
-    display: none;
-  }
-  .navigation li {
-    display: inline-block;
-    margin-right: 1rem;
-  }
-  .navigation li a {
-    color: yellow;
   }
 
   /*WEATHER MAIN SECTION*/
@@ -91,5 +67,45 @@
   .five-day-td,
   .five-day-degree {
     text-align: center;
+  }
+
+  .five-day-td img {
+    width: 50px;
+    padding-top: 10px;
+  }
+
+  article img {
+    float: right;
+    max-width: 400px;
+    margin: 1rem;
+  }
+
+  aside {
+    position: relative;
+    height: 225px;
+  }
+
+  .contact {
+    margin-left: 15px;
+    text-align: justify;
+  }
+  .map {
+    position: absolute;
+    top: 5px;
+    left: 400px;
+  }
+  .contact ul li {
+    padding-left: 20px;
+  }
+
+  #socialmedia li img {
+    width: 40px;
+    padding: 5px;
+  }
+
+  footer {
+    background-color: #a7b3a5;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
   }
 }

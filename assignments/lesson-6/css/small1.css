@@ -48,7 +48,7 @@ div.motto {
 }
 
 /* NAVIGATION */
-/*
+
 nav button,
 nav a {
   display: inline-block;
@@ -57,16 +57,12 @@ nav a {
   background-color: #67839b;
   color: #eae3ea;
   text-align: center;
-} 
-nav ul.hidemenu {
-  display: none;
 }
-
-nav ul {
+ul.hidemenu {
   list-style-type: none;
   margin: 0;
   padding: 0;
-} 
+}
 ul.hidemenu li a {
   display: block;
   background-color: #67839b;
@@ -80,78 +76,6 @@ ul.hidemenu li a.active {
   background-color: #eae3ea;
   color: #67839b;
 }
-???????
-nav {
-  margin: 0 auto;
-  width: 100%;
-  background-color: #67839b;
-  color: #eae3ea;
-}
-
-.navigation {
-  list-style: none;
-  text-align: center;
-}
-
-.navigation li:first-child {
-  display: block;
-}
-.navigation li {
-  display: none;
-}
-.navigation a {
-  display: block;
-  background-color: #67839b;
-}
-.navigation a:hover:not(.active) {
-  background-color: #b4dbc0;
-  color: #67839b;
-}
-.navigation li a.active {
-  background-color: #eae3ea;
-  color: #67839b;
-}
-
-.responsive li {
-  display: block;
-}*/
-
-nav {
-  margin: 0 auto;
-  max-width: 760px;
-  background-color: #000;
-}
-.navigation {
-  list-style: none;
-  text-align: center;
-}
-.navigation li:first-child {
-  display: block;
-}
-.navigation li {
-  display: none;
-}
-.navigation a {
-  display: block;
-  color: #fff;
-  padding: 0.75rem;
-  text-align: center;
-  text-decoration: none;
-}
-.navigation a:hover {
-  color: #000;
-  background-color: #fff;
-  font-weight: 700;
-}
-
-/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
-  <ul class="navigation responsive">
-  */
-.responsive li {
-  display: block;
-}
-
-/* Media Query for medium + screens */
 
 /*WEATHER MAIN SECTION*/
 
@@ -169,15 +93,16 @@ h1.townname {
 .herocontainer {
   margin: 0 auto;
   position: relative;
-  max-width: 400px;
+  max-width: fit-content;
   height: auto;
+  padding: 0.5em;
   z-index: 0;
 }
 
 .hero-img img {
   position: relative;
   margin: 0 auto;
-  width: 100%;
+  max-width: 280px;
   height: auto;
   z-index: -1;
   border: 10px groove #67839b;
@@ -188,7 +113,7 @@ h1.townname {
   position: absolute;
   top: 1rem;
   left: 1rem;
-  background: #b56457b7;
+  background: #b56457d5;
   border: 1px solid #67839b;
   padding: 0.5rem;
   box-shadow: 0 0 30px #777;
@@ -207,4 +132,18 @@ article {
 
 .fd-title {
   visibility: hidden;
+}
+
+/*ASIDE*/
+.aside {
+  display: inline-block;
+}
+.contact {
+  float: left;
+  position: flex;
+}
+
+.map {
+  float: right;
+  position: justify;
 }
