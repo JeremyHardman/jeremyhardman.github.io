@@ -34,12 +34,12 @@
   /*WEATHER MAIN SECTION*/
 
   .herocontainer {
-    max-width: 840px;
+    max-width: 90%;
     height: auto;
   }
 
   .hero-img img {
-    max-width: 940px;
+    max-width: 100%;
   }
 
   /*Five Day Forcast*/
