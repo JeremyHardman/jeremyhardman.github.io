@@ -137,6 +137,7 @@ article {
   background-color: #a7b3a5c7;
   padding: 1rem;
   margin: 1rem;
+  overflow: hidden;
 }
 
 article img {
