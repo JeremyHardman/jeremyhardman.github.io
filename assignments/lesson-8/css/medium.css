@@ -1,0 +1,9 @@
+@media (min-width: 500px) {
+  /*NAVIGATION*/
+
+  /*GALLERY*/
+  .gallerymain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

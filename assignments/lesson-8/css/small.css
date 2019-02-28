@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif, 'Oswald', sans-serif;
+  color: black;
+  background-color: #b56357;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Lobster Two', cursive, 'Lobster', cursive;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #b56357;
+  text-align: center;
+  padding: 0.3em;
+  margin: 0.9em 0.9em 0em 0.9em;
+  border: 7px #a7b3a5;
+  border-style: groove groove none groove;
+}
+
+header h1 {
+  text-shadow: 1px 1px #a7b3a5;
+  margin-bottom: 0;
+}
+.motto {
+  text-align: center;
+}
+/* NAVIGATION */
+
+nav {
+  margin: 0 0.9em;
+  background-color: #67839b;
+  color: #eae3ea;
+}
+.navigation {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+.navigation li {
+  display: none;
+}
+.navigation a {
+  display: block;
+  background-color: #67839b;
+  text-decoration: none;
+}
+.navigation a:hover:not(.active) {
+  background-color: #b4dbc0;
+  color: #67839b;
+}
+.navigation li a.active {
+  background-color: #eae3ea;
+  color: #67839b;
+}
+
+.responsive li {
+  display: block;
+}
+
+/* the onclick JS toggles the .repsonsive class from display none (.navigation li) to display block because the repsonsive class is added to the end of the class list like this in HTML Line #6.
+  <ul class="navigation responsive">
+  */
+.responsive li {
+  display: block;
+}
+
+/*WEATHER MAIN SECTION*/
+
+main {
+  display: block;
+  background-color: #eae3ea;
+  padding-bottom: 1em;
+}
+h1.townname {
+  text-align: center;
+  padding-top: 1rem;
+  margin: 0;
+}
+
+.herocontainer {
+  margin: 0 auto;
+  position: relative;
+  max-width: 90%;
+  height: auto;
+  z-index: 0;
+  padding: 0.5rem;
+}
+
+.hero-img img {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  border: 10px groove #67839b;
+  padding: 0.5rem;
+}
+
+.weathersummary {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  background: #b56457ea;
+  border: 1px solid #67839b;
+  padding: 0.5rem;
+  box-shadow: 0 0 30px #777;
+  z-index: 2;
+}
+.summarytittle {
+  text-decoration: underline;
+}
+
+/*ARTICLE*/
+
+article {
+  background-color: #a7b3a5c7;
+  padding: 1rem;
+  margin: 1rem;
+  overflow: hidden;
+}
+
+article img {
+  padding: 0.5rem;
+  box-shadow: 0 0 5px #777;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  background-color: #eae3ea;
+}
+
+.five-day {
+  display: none;
+}
+
+#five-day-tittle {
+  visibility: hidden;
+}
+
+article h5 {
+  padding: 0.5em 0.5em 0.5em 0;
+}
+
+/*ASIDE*/
+aside {
+  background-color: #67839b;
+  max-width: 100%;
+}
+.contact {
+  padding: 1.5rem;
+  text-align: center;
+  text-shadow: 1px 1px #a7b3a5;
+}
+.contact h2 {
+  padding-bottom: 5px;
+}
+
+.contact img {
+  width: 25px;
+  padding-right: 5px;
+  padding-left: 2px;
+}
+
+#socialmedia li {
+  display: inline-block;
+  width: 25px;
+}
+
+#socialmedia li img {
+  width: 30px;
+}
+
+/*MAP*/
+iframe {
+  box-shadow: 4px 4px 8px #777;
+}
+.map {
+  text-align: center;
+  margin: auto;
+  padding: 1em;
+}
+
+/*FOOTER*/
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  font-size: 70%;
+  color: #eae3ea;
+  background-color: #a7b3a5;
+  margin: 0 1rem;
+}
+
+/*GALLERY*/
+.gallerytitle,
+.gallerymain {
+  background-color: #eae3ea;
+  margin: -0.5px 1rem -0.5px 1rem;
+  padding: 1rem;
+}
+
+.gallerymain {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+.gallerytitle {
+  text-align: center;
+}
+
+.gallerymain section {
+  background-color: #a7b3a5;
+  padding: 0.5rem;
+  overflow: auto;
+  border: 2px solid #67839b;
+  border-radius: 5px;
+}
+
+.gallerymain > section img {
+  width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+}
