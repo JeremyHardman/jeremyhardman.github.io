@@ -76,8 +76,8 @@
             <input id="stormdate" type="date" />
           </div>
           <div>
-            <label for="stormtype">Storm Type:</label>
-            <input id="stormtype" list="stormdata" name="stormtype" />
+            <label for="stormdata">Storm Type:</label>
+            <input id="stormdata" list="stormdata" name="stormdata" />
             <datalist id="stormdata">
               <option value="Flash Flood"> </option>
               <option value="Hail"> </option>
@@ -102,7 +102,7 @@
           </div>
           <div>
             <label for="region">Region</label>
-            <select name="region">
+            <select id="region" name="region">
               <option value="selectregion" disabled selected
                 >Select Region...</option
               >
@@ -114,7 +114,7 @@
 
           <fieldset class="radio">
             <legend>Danger Report</legend>
-            <label for="radio"><em>Are you in Danger?</em></label>
+            <label for="danger"><em>Are you in Danger?</em></label>
             <div id="radio">
               <label for="response1">Yes</label>
               <input
@@ -146,8 +146,8 @@
             id="commentblock"
             name="block"
             rows="5"
-            required
             pattern="[A-Za-z]"
+            required
           >
           </textarea>
         </fieldset>
