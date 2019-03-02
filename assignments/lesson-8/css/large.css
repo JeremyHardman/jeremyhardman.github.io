@@ -1,12 +1,6 @@
 @media (min-width: 800px) {
   /*NAVIGATION*/
 
-  main,
-  footer,
-  aside {
-    margin: auto;
-  }
-
   header h1 {
     font-size: 3em;
   }
@@ -50,9 +44,10 @@
     display: flex;
     justify-content: center;
     background-color: white;
-    width: 100%;
+
     height: auto;
     padding: 1em;
+    margin: 1rem;
   }
 
   #five-day-tittle {
@@ -82,7 +77,12 @@
     max-width: 400px;
     margin: 1rem;
   }
-
+  aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  /*
   aside {
     position: relative;
     height: 225px;
@@ -100,6 +100,7 @@
   .contact ul li {
     padding-left: 20px;
   }
+  */
 
   #socialmedia li img {
     width: 40px;

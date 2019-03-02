@@ -51,7 +51,7 @@ nav {
 
 ul {
   list-style-type: none;
-  padding: 0;
+  padding: 3px;
 }
 
 .navigation li:first-child {
@@ -90,7 +90,8 @@ ul {
 main {
   display: block;
   background-color: #eae3ea;
-  padding-bottom: 1em;
+  margin: -0.5px 1rem -0.5px 1rem;
+  padding: 1rem;
 }
 h1.townname {
   text-align: center;
@@ -101,6 +102,7 @@ h1.townname {
 .herocontainer {
   margin: 0 auto;
   position: relative;
+
   max-width: 90%;
   height: auto;
   z-index: 0;
@@ -164,7 +166,12 @@ article h5 {
 /*ASIDE*/
 aside {
   background-color: #67839b;
-  max-width: 100%;
+  padding: 1rem;
+  margin: 0 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .contact {
   padding: 1.5rem;
@@ -195,8 +202,6 @@ iframe {
   box-shadow: 4px 4px 8px #777;
 }
 .map {
-  text-align: center;
-  margin: auto;
   padding: 1em;
 }
 
@@ -244,4 +249,84 @@ footer {
 
 figure {
   margin: 0;
+}
+
+/*THANKS SCREEN*/
+
+.thankstittle {
+  background-color: #eae3ea;
+  margin: -0.5px 1rem -0.5px 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+/*STORM CENTER*/
+
+.stormtittle,
+.stormmain {
+  background-color: #eae3ea;
+  margin: -0.5px 1rem -0.5px 1rem;
+  padding: 1rem;
+}
+
+.stormtittle {
+  text-align: center;
+}
+
+.stormmain {
+  box-sizing: border-box;
+}
+.form {
+  padding: 0 20px 20px 20px;
+  max-width: 480px;
+  margin: auto;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.3em;
+  border: 1px solid #67839b;
+  border-radius: 4px;
+  resize: vertical;
+}
+#commentblock {
+  float: left;
+}
+label {
+  padding: 10px 10px 10px 0;
+  display: inline-block;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 14px 20px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #67839b;
+}
+
+.submit-button:hover {
+  background-color: #a7b3a5;
+}
+
+input[type='radio'] {
+  width: auto;
+}
+.radio label {
+  padding: 12px;
+}
+
+fieldset.radio,
+fieldset.storm,
+fieldset.addition {
+  margin-top: 12px;
+}
+
+input:required,
+textarea:required {
+  box-shadow: inset 0px 0px 6px #b56457ea;
 }
