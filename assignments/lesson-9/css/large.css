@@ -1,0 +1,129 @@
+@media (min-width: 800px) {
+  /*NAVIGATION*/
+
+  header h1 {
+    font-size: 3em;
+  }
+
+  nav {
+    background-color: #67839b;
+    border-top: 2px solid #a7b3a5;
+  }
+  .navigation {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+  }
+  .navigation li {
+    line-height: 15px;
+    display: block;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+  nav ul li a {
+    font-size: 100%;
+    border: none;
+    border-right: 1px solid #a7b3a5;
+    padding: 0.6rem;
+  }
+
+  /*WEATHER MAIN SECTION*/
+
+  .herocontainer {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .hero-img img {
+    max-width: 100%;
+  }
+
+  /*Five Day Forcast*/
+  .five-day {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+
+    height: auto;
+    padding: 1em;
+    margin: 1rem;
+  }
+
+  #five-day-tittle {
+    visibility: visible;
+    text-align: center;
+    background-color: #eae3ea;
+  }
+
+  .five-day-th th {
+    border: 2px solid #67839b;
+    background-color: #b56357;
+    padding: 1em;
+  }
+
+  .five-day-td,
+  .five-day-degree {
+    text-align: center;
+  }
+
+  .five-day-td img {
+    width: 50px;
+    padding-top: 10px;
+  }
+
+  article img {
+    float: right;
+    max-width: 400px;
+    margin: 1rem;
+  }
+  aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  /*
+  aside {
+    position: relative;
+    height: 225px;
+  }
+
+  .contact {
+    margin-left: 15px;
+    text-align: justify;
+  }
+  .map {
+    position: absolute;
+    top: 5px;
+    left: 400px;
+  }
+  .contact ul li {
+    padding-left: 20px;
+  }
+  */
+
+  #socialmedia li img {
+    width: 40px;
+    padding: 5px;
+  }
+
+  footer {
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    margin: 0 1rem;
+  }
+
+  /*GALLERY*/
+
+  .gallerymain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .gallerymain section {
+    background-color: #a7b3a5;
+  }
+
+  .gallerymain section:hover {
+    box-shadow: 0 5px 5px #777;
+  }
+}
