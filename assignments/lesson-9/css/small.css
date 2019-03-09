@@ -216,6 +216,13 @@ footer {
   margin: 0 1rem;
 }
 
+footer p a {
+  color: #eae3ea;
+}
+footer p a:hover {
+  color: #67839b;
+}
+
 /*GALLERY*/
 .gallerytitle,
 .gallerymain {
@@ -263,7 +270,8 @@ figure {
 /*STORM CENTER*/
 
 .stormtittle,
-.stormmain {
+.stormmain,
+.cityInfo {
   background-color: #eae3ea;
   margin: -0.5px 1rem -0.5px 1rem;
   padding: 1rem;
@@ -330,4 +338,57 @@ fieldset.addition {
 input:required,
 textarea:required {
   box-shadow: inset 0px 0px 6px #b56457ea;
+}
+
+/* HOME PAGE STYLES*/
+
+.cityInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cityInfo article {
+  text-align: center;
+  margin: 15px 0 0 0;
+}
+
+.homephoto {
+  margin: auto;
+  padding: 0;
+}
+.cityInfo h4 {
+  padding: 1rem 0;
+}
+.cityInfo p {
+  padding-top: 10px;
+}
+
+.home-relative img {
+  width: 100%;
+  margin: 0 0 -4.5px 0;
+}
+.homesec2 {
+  margin-left: 15px;
+  margin-right: 15px;
+  height: auto;
+}
+
+div.home-relative {
+  text-align: center;
+  position: relative;
+}
+
+div.home-absolute {
+  position: absolute;
+  top: 80px;
+  left: 40px;
+  width: 255px;
+  height: 18px;
+  color: #eae3ea;
+}
+
+.homeheroH1 {
+  font-size: inherit;
+  text-align: start;
 }

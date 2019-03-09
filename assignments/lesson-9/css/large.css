@@ -126,4 +126,20 @@
   .gallerymain section:hover {
     box-shadow: 0 5px 5px #777;
   }
+  /* HOME PAGE STYLES*/
+
+  .cityInfo article,
+  img.homephoto {
+    float: none;
+  }
+  .homeheroH1 {
+    font-size: xx-large;
+  }
+
+  div.home-absolute {
+    position: absolute;
+    top: 80px;
+    left: 150px;
+    width: 255px;
+  }
 }

@@ -1,4 +1,4 @@
-/* || general styles */
+/* || general styles for heros.html*/
 
 html {
   font-family: 'helvetica neue', helvetica, arial, sans-serif;
@@ -48,4 +48,15 @@ h2 {
   font-size: 2.5rem;
   letter-spacing: -5px;
   margin-bottom: 10px;
+}
+
+nav {
+  list-style: none;
+  align-content: center;
+}
+.portal {
+  display: inline-flex;
+}
+a {
+  display: flex;
 }
