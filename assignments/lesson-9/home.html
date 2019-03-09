@@ -82,20 +82,20 @@
         var data = jsonObj
 
         var myArticle = document.createElement('article')
-        var myH1 = document.createElement('h2')
+        var myHd = document.createElement('h2')
         var myPara1 = document.createElement('h4')
         var myImage = document.createElement('img')
         var myPara2 = document.createElement('p')
         var myPara3 = document.createElement('p')
         var myPara4 = document.createElement('p')
 
-        myH1.textContent = data.name
+        myHd.textContent = data.name
         myPara1.textContent = data.motto
         myPara2.textContent = 'Year Founded: ' + data.yearFounded
         myPara3.textContent = 'Population: ' + data.currentPopulation
         myPara4.textContent = 'Average Rain Fall: ' + data.averageRainfall + '"'
 
-        switch (myH1.textContent) {
+        switch (myHd.textContent) {
           case 'Preston':
             myImage.src = 'images/bob-canning-58962-unsplash-opti800.jpg'
             myImage.setAttribute('class', 'homephoto')
@@ -116,7 +116,7 @@
             break
         }
 
-        myArticle.appendChild(myH1)
+        myArticle.appendChild(myHd)
         myArticle.appendChild(myPara1)
         myArticle.appendChild(myImage)
         myArticle.appendChild(myPara2)
@@ -134,9 +134,9 @@
           alt="man with child on back near mountain lake"
         />
         <div class="home-absolute">
-          <h1 class="homehero1">
+          <h2 class="homehero1">
             Weather reports that keep you playing safe!
-          </h1>
+          </h2>
         </div>
       </div>
     </section>
