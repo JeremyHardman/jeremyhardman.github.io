@@ -342,6 +342,13 @@ textarea:required {
 
 /* HOME PAGE STYLES*/
 
+h1.homePage {
+  background-color: #eae3ea;
+  text-align: center;
+  padding-top: 1rem;
+  margin: 0 15px 0 15px;
+}
+
 .cityInfo {
   display: flex;
   flex-direction: column;
