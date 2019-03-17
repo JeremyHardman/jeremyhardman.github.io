@@ -13,10 +13,10 @@
       href="https://fonts.googleapis.com/css?family=Lobster%7cLobster+Two%7cOpen+Sans%7cOswald"
       rel="stylesheet"
     />
-    <link href="/assignments/lesson-9/css/normalize.css" rel="stylesheet" />
-    <link href="/assignments/lesson-9/css/small.css" rel="stylesheet" />
-    <link href="/assignments/lesson-9/css/medium.css" rel="stylesheet" />
-    <link href="/assignments/lesson-9/css/large.css" rel="stylesheet" />
+    <link href="/css/normalize.css" rel="stylesheet" />
+    <link href="/css/small.css" rel="stylesheet" />
+    <link href="/css/medium.css" rel="stylesheet" />
+    <link href="/css/large.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -64,14 +64,12 @@
           <h3 class="summarytittle">Weather Summary</h3>
           <ul>
             <li>
-              Temperature: <span id="currenttemp">29</span> &deg;F<span
-                id="#"
-              ></span>
+              Temperature: <span id="currentTemp"></span> &deg;F</span>
             </li>
-            <li>High: <span id="hightemp">29</span> &deg;F</li>
+            <li>Condition: <span id="weatherDesc"></span></li>
+            <li>Humidity: <span id="humidity"></span> %</li>
+            <li>Wind Speed: <span id="windSpeed"></span> mph</li>
             <li>Wind Chill: <span id="windchill"></span> &deg;F</li>
-            <li>Humidity: <span id="humidity"></span> 79%</li>
-            <li>Wind Speed: <span id="windspeed">6</span> mph</li>
           </ul>
         </section>
       </div>
@@ -79,35 +77,35 @@
       <h2 id="five-day-tittle">5 Day Forecast</h2>
       <table class="five-day">
         <tr class="five-day-th">
-          <th>Sunday</th>
-          <th>Monday</th>
-          <th>Tuesday</th>
-          <th>Wendsday</th>
-          <th>Thursday</th>
+          <th><span id = 'day1'></span></th>
+          <th><span id = 'day2'></span></th>
+          <th><span id = 'day3'></span></th>
+          <th><span id = 'day4'></span></th>
+          <th><span id = 'day5'></span></th>
         </tr>
         <tr class="five-day-td">
           <td>
-            <img src="images/iconfinder_snow-3_110816.svg" alt="Snow Icon" />
+            <img id= "weatherIcon1" src="" alt="" />
           </td>
           <td>
-            <img src="images/iconfinder_snow-3_110816.svg" alt="Snow Icon" />
+            <img id= "weatherIcon2" src="" alt="" />
           </td>
           <td>
-            <img src="images/iconfinder_snow-3_110816.svg" alt="Snow Icon" />
+            <img id= "weatherIcon3" src="" alt="" />
           </td>
           <td>
-            <img src="images/iconfinder_snow-3_110816.svg" alt="Snow Icon" />
+            <img id= "weatherIcon4" src="" alt="" />
           </td>
           <td>
-            <img src="images/iconfinder_snow-3_110816.svg" alt="Snow Icon" />
+            <img id= "weatherIcon5" src="" alt="" />
           </td>
         </tr>
         <tr class="five-day-degree">
-          <td>17 &deg;F</td>
-          <td>17 &deg;F</td>
-          <td>17 &deg;F</td>
-          <td>17 &deg;F</td>
-          <td>17 &deg;F</td>
+          <td><span id = 'tempFive1'></span> &deg;F</td>
+          <td><span id = 'tempFive2'></span> &deg;F</td>
+          <td><span id = 'tempFive3'></span> &deg;F</td>
+          <td><span id = 'tempFive4'></span> &deg;F</td>
+          <td><span id = 'tempFive5'></span> &deg;F</td>
         </tr>
       </table>
 
@@ -136,6 +134,14 @@
           its snowiest February on record (since 1970).
         </p>
       </article>
+      <article>
+        <h2><span id='newHead1'></span></h2>
+        <ul id='newMess'>
+          
+
+        </ul> 
+        
+      </article>  
     </main>
 
     <aside>
@@ -201,6 +207,7 @@
     </footer>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weatherapi.js"></script>
+    <script src="scripts/cityData.js"></script>
   </body>
 </html>

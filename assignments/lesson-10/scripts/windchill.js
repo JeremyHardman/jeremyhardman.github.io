@@ -1,5 +1,5 @@
-var tempF = parseFloat(document.getElementById('currenttemp').innerHTML)
-var speed = parseFloat(document.getElementById('windspeed').innerHTML)
+var tempF = parseFloat(document.getElementById('currentTemp').innerHTML)
+var speed = parseFloat(document.getElementById('windSpeed').innerHTML)
 
 var windchill =
   35.74 +
