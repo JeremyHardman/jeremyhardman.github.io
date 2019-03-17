@@ -163,6 +163,21 @@ article h5 {
   padding: 0.5em 0.5em 0.5em 0;
 }
 
+/* City DATA */
+.cityData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cityData > h2 {
+  margin: auto;
+}
+
+.cityData img {
+  float: left;
+}
+
 /*ASIDE*/
 aside {
   background-color: #67839b;
