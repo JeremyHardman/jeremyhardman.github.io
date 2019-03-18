@@ -164,18 +164,13 @@ article h5 {
 }
 
 /* City DATA */
-.cityData {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 .cityData > h2 {
-  margin: auto;
+  text-align: center;
 }
 
-.cityData img {
-  float: left;
+#newMess {
+  margin: 10px;
 }
 
 /*ASIDE*/
