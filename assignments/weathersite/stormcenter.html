@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Storm Center input page for weather site project for CIT 230 project"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Jeremy Hardman" />
+    <title>The Storm Sentry | Storm Center | Weather Forecast</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster%7cLobster+Two%7cOpen+Sans%7cOswald"
+      rel="stylesheet"
+    />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="images/iconfinder_weather-06_1527657.svg"
+        alt="Weather image of cloud"
+      />
+      <div class="heading">
+        <h1>The Storm Sentry</h1>
+        <div class="motto">Sun or Rain, Lets Play</div>
+      </div>
+    </header>
+
+    <nav>
+      <ul class="navigation">
+        <li>
+          <a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a>
+        </li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="">Soda Springs</a></li>
+        <li><a href="">Fish Haven</a></li>
+        <li><a class="active" href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <h1 class="stormtittle">Storm Center</h1>
+    <main class="stormmain">
+      <form class="form" action="/thanks.html" method="get">
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <div>
+            <label for="name">Full Name</label>
+            <input id="name" type="text" required minlength="5" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="user@email.org" />
+          </div>
+          <div>
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="tel" required />
+          </div>
+          <div>
+            <label for="zipcode">Zip Code</label>
+            <input id="zipcode" type="number" required />
+          </div>
+        </fieldset>
+
+        <fieldset class="storm">
+          <legend>Storm Information</legend>
+          <div>
+            <label for="stormdate">Today's Date</label>
+            <input id="stormdate" type="date" />
+          </div>
+          <div>
+            <p>Storm Type:</p>
+            <input list="stormdata" name="stormdata" />
+            <datalist id="stormdata">
+              <option value="Flash Flood"> </option>
+              <option value="Hail"> </option>
+              <option value="Hurricane"> </option>
+              <option value="Thunderstorm"> </option>
+              <option value="Tornado"> </option>
+            </datalist>
+          </div>
+          <div>
+            <label for="stormseverity">Storm Rating (1 to 10):</label>
+            <input
+              id="stormseverity"
+              type="range"
+              value="5"
+              min="1"
+              max="10"
+              step="1"
+              oninput="adjustRating(this.value)"
+              onchange="adjustRating(this.value)"
+            />
+            <span id="ratingvalue">5</span>
+          </div>
+          <div>
+            <label for="region">Region</label>
+            <select id="region" name="region">
+              <option value="selectregion" disabled selected
+                >Select Region...</option
+              >
+              <option value="preston">Preston</option>
+              <option value="sodasprings">Soda Springs</option>
+              <option value="fishhaven">Fish Haven</option>
+            </select>
+          </div>
+
+          <fieldset class="radio">
+            <legend>Danger Report</legend>
+            <div id="radio">
+              <h4><em>Are you in Danger?</em></h4>
+              <label for="response1">Yes</label>
+              <input
+                type="radio"
+                id="response1"
+                name="response"
+                value="yes"
+                checked
+              />
+
+              <label for="response2">No</label>
+              <input type="radio" id="response2" name="response" value="no" />
+
+              <label for="response3">Maybe</label>
+              <input
+                type="radio"
+                id="response3"
+                name="response"
+                value="maybe"
+              />
+            </div>
+          </fieldset>
+        </fieldset>
+
+        <fieldset class="addition">
+          <legend>Additional Information</legend>
+          <label for="commentblock"><em>Enter relevant Information</em></label>
+          <textarea id="commentblock" name="block" rows="5" required>
+          </textarea>
+        </fieldset>
+
+        <button class="submit-button" type="submit">Submit</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>
+        &copy;2019 | The Weather Sentry | Jeremy Hardman |
+        <a href="../../">Portal</a><br />
+        <span id="currentdate"></span><br />
+      </p>
+    </footer>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/ratingvalue.js"></script>
+  </body>
+</html>

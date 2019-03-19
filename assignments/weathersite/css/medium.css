@@ -1,0 +1,46 @@
+@media (min-width: 500px) {
+  /*NAVIGATION*/
+
+  /*GALLERY*/
+  .gallerymain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* HOME PAGE STYLES*/
+
+  .cityInfo {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .cityInfo article {
+    width: 31%;
+    margin: 0 7.5px;
+  }
+  .homephoto {
+    margin: auto;
+    padding: 0;
+  }
+
+  /* City DATA */
+  #cityDataimg {
+    grid-area: cityLeft;
+  }
+
+  #newMess {
+    grid-area: cityRight;
+  }
+
+  #cityList {
+    display: grid;
+    grid: 'cityLeft cityRight';
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+  }
+
+  #cityDataimg > img {
+    margin-right: 0;
+  }
+}
