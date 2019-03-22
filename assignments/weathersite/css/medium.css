@@ -1,4 +1,14 @@
 @media (min-width: 500px) {
+  /*HEADER*/
+
+  .heading {
+    font-size: 90%;
+  }
+
+  header img {
+    max-width: 40%;
+  }
+
   /*NAVIGATION*/
 
   /*GALLERY*/
@@ -24,6 +34,11 @@
   }
 
   /* City DATA */
+
+  #newMess > li {
+    font-size: large;
+  }
+
   #cityDataimg {
     grid-area: cityLeft;
   }
@@ -38,9 +53,5 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
-  }
-
-  #cityDataimg > img {
-    margin-right: 0;
   }
 }

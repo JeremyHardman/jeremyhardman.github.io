@@ -8,7 +8,7 @@ body {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif, 'Oswald', sans-serif;
   color: black;
-  background-color: #b56357;
+  background-color: #67839b;
 }
 
 h1,
@@ -21,7 +21,7 @@ h3 {
 header {
   display: flex;
   justify-content: center;
-  background-color: #b56357;
+  background-color: #67839b;
   text-align: center;
   padding: 0.3em;
   margin: 0.9em 0.9em 0em 0.9em;
@@ -29,9 +29,17 @@ header {
   border-style: groove groove none groove;
 }
 
+.heading {
+  font-size: 70%;
+}
+
+header img {
+  max-width: 40%;
+}
+
 header h1 {
   text-shadow: 1px 1px #a7b3a5;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 .motto {
   text-align: center;
@@ -39,8 +47,8 @@ header h1 {
 /* NAVIGATION */
 
 nav {
-  margin: 0 0.9em;
-  background-color: #67839b;
+  margin: 0 15px;
+  background-color: #2f3c47;
   color: #eae3ea;
 }
 .navigation {
@@ -62,7 +70,8 @@ ul {
 }
 .navigation a {
   display: block;
-  background-color: #67839b;
+  background-color: #2f3c47;
+  color: #eae3ea;
   text-decoration: none;
 }
 .navigation a:hover:not(.active) {
@@ -123,8 +132,8 @@ h1.townname {
   position: absolute;
   top: 1.5rem;
   left: 1.5rem;
-  background: #b56457ea;
-  border: 1px solid #67839b;
+  background: #67839bd4;
+  border: 1px solid #2f3c47;
   padding: 0.5rem;
   box-shadow: 0 0 30px #777;
   z-index: 2;
@@ -142,7 +151,7 @@ article {
   overflow: hidden;
 }
 
-article img {
+#weatherImage {
   padding: 0.5rem;
   box-shadow: 0 0 5px #777;
   padding: 1rem;
@@ -165,12 +174,33 @@ article h5 {
 
 /* City DATA */
 
+#cityDataimg,
+#newMess {
+  margin: auto;
+}
 .cityData > h2 {
   text-align: center;
+  margin-bottom: 15px;
 }
 
 #newMess {
-  margin: 10px;
+  text-align: center;
+}
+
+#newMess > li {
+  background-color: #2f3c47;
+  color: #eae3ea;
+  margin: 5px;
+  padding: 9px;
+  width: -webkit-fill-available;
+}
+
+#cityDataimg > img {
+  padding: 0.5rem;
+  box-shadow: 0 0 5px #777;
+  padding: 1rem;
+  width: 100%;
+  background-color: #eae3ea;
 }
 
 /*ASIDE*/
@@ -218,12 +248,12 @@ iframe {
 /*FOOTER*/
 
 footer {
-  padding: 1rem;
+  padding: 1rem 0 1rem 0;
   text-align: center;
   font-size: 70%;
   color: #eae3ea;
   background-color: #a7b3a5;
-  margin: 0 1rem;
+  margin: 0;
 }
 
 footer p a {
@@ -262,6 +292,10 @@ footer p a:hover {
 .gallerymain > section img {
   width: 100%;
   height: auto;
+}
+
+.galleryFoot {
+  margin: 0 15px;
 }
 
 figure {

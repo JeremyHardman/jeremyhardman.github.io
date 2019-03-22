@@ -1,46 +1,46 @@
-var cityName,
-  cities,
-  i,
-  x = '',
-  myPara1 = ''
-var mynewList = document.querySelector('newMess')
-var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json'
-var request = new XMLHttpRequest()
-request.open('GET', requestURL)
-request.responseType = 'json'
-request.send()
+// City Data API JSON FILE
 
-request.onload = function() {
-  var cityData = request.response
-  populateCity(cityData)
-}
 
-function populateCity(jsonObj) {
-  cities = jsonObj['towns']
 
-  for (cityName = 0; cityName < cities.length; cityName++) {
-    if (cities[cityName].name == 'Preston') showCities(cities[cityName])
-  }
-}
+function getTownName(townID) {
 
-function showCities(jsonObj) {
-  var data = jsonObj
+  var cityName,
+    cities,
+    i,
+    x = '',
+    myList = ''
+  var myPara1 = document.querySelector('newMess')
+  var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json'
+  var request = new XMLHttpRequest()
+  request.open('GET', requestURL)
+  request.responseType = 'json'
+  request.send()
 
-  for (i = 0; i < data.events.length; i++) {
-    myPara1 += data.events[i]
+  request.onload = function () {
+    var cityData = request.response
+    populateCity(cityData)
   }
 
-  document.getElementById('newMess').innerHTML = myPara1
+  function populateCity(jsonObj) {
+    cities = jsonObj['towns']
 
-  // var mynewList = document.createElement('LI')
-  // var myHd = document.createTextNode('h2')
-  // var myPara1 = document.createTextNode('h4')
+    for (cityName = 0; cityName < cities.length; cityName++) {
+      if (cities[cityName].name == townID) showCities(cities[cityName])
+    }
+  }
 
-  // myHd.textContent = data.name
-  // myPara1.textContent = data.events
+  function showCities(jsonObj) {
+    var data = jsonObj
+    var townEventData = jsonObj['events']
 
-  // mynewList.appendChild(myPara1)
+    for (var i = 0; i < townEventData.length; i++) {
+      var myPara1 = document.createElement('li')
+      myPara1.textContent = townEventData[i]
 
-  // document.getElementById('newMess').appendChild(mynewList)
-  // document.getElementById('newHead1').appendChild(myHd)
+      document.getElementById('newMess').appendChild(myPara1)
+    }
+    var myHd = document.createTextNode('h2')
+    myHd.textContent = data.name
+    document.getElementById('newHead1').appendChild(myHd)
+  }
 }

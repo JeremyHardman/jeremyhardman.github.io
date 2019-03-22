@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="Preston town page for weather site project for CIT 230 project"
+      content="Soda Springs page for weather site project for CIT 230 project"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Jeremy Hardman" />
-    <title>The Storm Sentry | Town of Preston | Weather Forecast</title>
+    <title>The Storm Sentry | Town of Soda Springs | Weather Forecast</title>
     <link
       href="https://fonts.googleapis.com/css?family=Lobster%7cLobster+Two%7cOpen+Sans%7cOswald"
       rel="stylesheet"
@@ -37,8 +37,8 @@
           <a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a>
         </li>
         <li><a href="home.html">Home</a></li>
-        <li><a class="active" href="preston.html">Preston</a></li>
-        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a class="active" href="">Soda Springs</a></li>
         <li><a href="fishhaven.html">Fish Haven</a></li>
         <li><a href="stormcenter.html">Storm Center</a></li>
         <li><a href="gallery.html">Gallery</a></li>
@@ -46,13 +46,13 @@
     </nav>
 
     <main>
-      <h1 class="townname">Preston Idaho</h1>
+      <h1 class="townname">Soda Springs Idaho</h1>
       <div class="herocontainer">
         <div class="hero-img">
           <img
-          srcset="images/cit230_image_franklinOriginal_310w.jpg 310w,
-          images/cit230_image_franklinOriginal_420w.jpg 420w,
-          images/cit230_image_franklinOriginal_840w.jpg 840w
+          srcset="images/sodasprings-yapo-zhou-1177155-unsplash420w.jpg 310w,
+          images/sodasprings-yapo-zhou-1177155-unsplash720w.jpg 420w,
+          images/sodasprings-yapo-zhou-1177155-unsplash840w.jpg 840w
           "
           alt="sunny day overlooking a grass field"
           sizes="90vw"/>
@@ -108,19 +108,16 @@
       </table>
 
       <article>
-        <h4>Active Pattern Will Bring Chances for More Snow Into Next Week</h4>
-        <h5>By Linda Lam · weather.com</h5>
+        <h4>Book your flight at least 2 weeks in advance</h4>
+        <h5>By Sarahi Castro · gemsandpotatoes.com</h5>
         <img 
         src="images/weather-article-photo.jpg" id="weatherImage"
           alt="Weather Forcast Image https://weather.com/safety/winter/news/2019-02-15-active-pattern-snow-ice-west-plains-midwest-northeast"
         />
         <p>
-          Multiple chances for snow are ahead for parts of the West, Plains,
-          Midwest and Northeast as an active weather pattern will be in place
-          for at least the next week. The jet stream pattern will feature a
-          southward dip over the West which will allow systems to track through
-          the West and into the Plains, Midwest and off the East Coast. Areas
-          south of this track will see rain, while farther north snow will fall.
+            Book your flight at least 2 weeks in advance
+
+            I’m not kidding when I say at least two weeks. I was booking my flight to Boise, Idaho from Baltimore, Maryland and noticed flights were $143 two weeks out as opposed to $270-$500 on any other given day before. I was planning to book my flight before midnight, and not even a few seconds after the clock struck 12:00am – the flight prices changed for the day I was planning to leave. I couldn’t believe they changed right on the dot; I had to book my flight a day after my anticipated departure date.
         </p>
         <h5>Weekend Snow</h5>
         <p>
@@ -192,28 +189,23 @@
         </ul>
       </div>
       <div class="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.77385346419!2d-111.9153445463921!3d42.09974162635544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C+ID+83263!5e0!3m2!1sen!2sus!4v1550035074936"
-          frameborder="0"
-          style="border:0"
-          allowfullscreen
-        ></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46943.91298983955!2d-111.62379162735259!3d42.66147063530506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda+Springs%2C+ID+83276!5e0!3m2!1sen!2sus!4v1553225464064" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </aside>
 
     <footer>
-      <p>
-        &copy;2019 | The Weather Sentry | Jeremy Hardman |
-        <a href="../../">Portal</a><br />
-        <a href="https://openweathermap.org/api">Weather Information</a><br />
-        <span id="currentdate"></span><br />
-      </p>
+        <p>
+            &copy;2019 | The Weather Sentry | Jeremy Hardman |
+            <a href="../../">Portal</a><br />
+            <a href="https://openweathermap.org/api">Weather Information</a><br />
+            <span id="currentdate"></span><br />
+          </p>
     </footer>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/weatherapi.js"></script>
     <script src="scripts/cityData.js"></script>
-    <script>getWeather("5604473")</script>
-    <script>getTownName("Preston")</script>
+    <script>getWeather("5607916")</script>
+    <script>getTownName("Soda Springs")</script>
   </body>
 </html>

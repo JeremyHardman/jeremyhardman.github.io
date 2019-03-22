@@ -4,9 +4,12 @@
   header h1 {
     font-size: 3em;
   }
+  .heading {
+    font-size: 110%;
+  }
 
   nav {
-    background-color: #67839b;
+    background-color: #2f3c47;
     border-top: 2px solid #a7b3a5;
   }
   .navigation {
@@ -20,6 +23,9 @@
   }
   .navigation li:first-child {
     display: none;
+  }
+  .navigation li:nth-child(2) a {
+    border-left: 1px solid #a7b3a5;
   }
   nav ul li a {
     font-size: 100%;
@@ -44,10 +50,13 @@
     display: flex;
     justify-content: center;
     background-color: white;
-
     height: auto;
     padding: 1em;
     margin: 1rem;
+    font-size: large;
+  }
+  tbody {
+    border: 4px solid #67839b;
   }
 
   #five-day-tittle {
@@ -57,8 +66,9 @@
   }
 
   .five-day-th th {
+    color: #eae3ea;
     border: 2px solid #67839b;
-    background-color: #b56357;
+    background-color: #2f3c47;
     padding: 1em;
   }
 
@@ -67,15 +77,18 @@
     text-align: center;
   }
 
+  .five-day-degree > td {
+    padding-bottom: 5px;
+  }
+
   .five-day-td img {
-    width: 50px;
+    width: 90px;
     padding-top: 10px;
   }
 
   article img {
     float: right;
     max-width: 400px;
-    margin: 1rem;
   }
   aside {
     display: flex;
@@ -84,26 +97,11 @@
   }
 
   /* City Data*/
-
-  /*
-  aside {
-    position: relative;
-    height: 225px;
+  #newMess > li {
+    font-size: x-large;
   }
 
-  .contact {
-    margin-left: 15px;
-    text-align: justify;
-  }
-  .map {
-    position: absolute;
-    top: 5px;
-    left: 400px;
-  }
-  .contact ul li {
-    padding-left: 20px;
-  }
-  */
+  /*ASIDE*/
 
   #socialmedia li img {
     width: 40px;
@@ -113,7 +111,7 @@
   footer {
     padding-bottom: 20px;
     margin-bottom: 50px;
-    margin: 0 1rem;
+    margin: 0;
   }
 
   /*GALLERY*/
