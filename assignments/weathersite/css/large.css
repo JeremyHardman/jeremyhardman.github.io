@@ -129,10 +129,19 @@
   }
   /* HOME PAGE STYLES*/
 
-  .cityInfo article,
-  img.homephoto {
-    float: none;
+  h1.homePage {
+    flex: 2 100%;
   }
+  .cityInfo {
+    flex-flow: row wrap;
+  }
+
+  .cityInfo > article {
+    max-width: 28%;
+    align-content: stretch;
+    flex: 2 auto;
+  }
+
   .homehero1 {
     font-size: xx-large;
   }

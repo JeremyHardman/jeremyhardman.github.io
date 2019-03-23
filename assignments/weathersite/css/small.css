@@ -160,6 +160,15 @@ article {
   background-color: #eae3ea;
 }
 
+#weatherImageF-H {
+  padding: 0.5rem;
+  box-shadow: 0 0 5px #777;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 30%;
+  background-color: #eae3ea;
+}
+
 .five-day {
   display: none;
 }
@@ -314,8 +323,7 @@ figure {
 /*STORM CENTER*/
 
 .stormtittle,
-.stormmain,
-.cityInfo {
+.stormmain {
   background-color: #eae3ea;
   margin: -0.5px 1rem -0.5px 1rem;
   padding: 1rem;
@@ -386,37 +394,27 @@ textarea:required {
 
 /* HOME PAGE STYLES*/
 
-h1.homePage {
+.cityInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+h1.homePage,
+.cityInfo {
   background-color: #eae3ea;
   text-align: center;
   padding-top: 1rem;
   margin: 0 15px 0 15px;
 }
-
-.cityInfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.cityInfo article {
-  text-align: center;
-  margin: 15px 0 0 0;
-}
-
 .homephoto {
-  margin: auto;
-  padding: 0;
+  max-width: 100%;
+  padding: 10px 0;
 }
-.cityInfo h4 {
-  padding: 1rem 0;
-}
-.cityInfo p {
-  padding-top: 10px;
-}
+
+/*HOME SECTION SECOND*/
 
 .home-relative img {
-  width: 100%;
+  max-width: 100%;
   margin: 0 0 -4.5px 0;
 }
 .homesec2 {
