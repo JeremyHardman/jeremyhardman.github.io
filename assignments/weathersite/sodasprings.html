@@ -50,19 +50,20 @@
       <div class="herocontainer">
         <div class="hero-img">
           <img
-          srcset="images/sodasprings-yapo-zhou-1177155-unsplash420w.jpg 310w,
-          images/sodasprings-yapo-zhou-1177155-unsplash720w.jpg 420w,
-          images/sodasprings-yapo-zhou-1177155-unsplash840w.jpg 840w
-          "
-          alt="sunny day overlooking a grass field"
-          sizes="90vw"/>
+            src="images/sodasprings-yapo-zhou-1177155-unsplash840w.jpg"
+            sizes="50vw"
+            srcset="
+              images/sodasprings-yapo-zhou-1177155-unsplash420w.jpg 310w,
+              images/sodasprings-yapo-zhou-1177155-unsplash720w.jpg 420w,
+              images/sodasprings-yapo-zhou-1177155-unsplash840w.jpg 840w
+            "
+            alt="sunny day overlooking a grass field"
+          />
         </div>
         <section class="weathersummary">
           <h3 class="summarytittle">Weather Summary</h3>
           <ul>
-            <li>
-              Temperature: <span id="currentTemp"></span> &deg;F</span>
-            </li>
+            <li>Temperature: <span id="currentTemp"></span> &deg;F</li>
             <li>Condition: <span id="weatherDesc"></span></li>
             <li>Humidity: <span id="humidity"></span> %</li>
             <li>Wind Speed: <span id="windSpeed"></span> mph</li>
@@ -75,67 +76,89 @@
       <h2 id="five-day-tittle">5 Day Forecast</h2>
       <table class="five-day">
         <tr class="five-day-th">
-          <th><span id = 'day1'></span></th>
-          <th><span id = 'day2'></span></th>
-          <th><span id = 'day3'></span></th>
-          <th><span id = 'day4'></span></th>
-          <th><span id = 'day5'></span></th>
+          <th><span id="day1"></span></th>
+          <th><span id="day2"></span></th>
+          <th><span id="day3"></span></th>
+          <th><span id="day4"></span></th>
+          <th><span id="day5"></span></th>
         </tr>
         <tr class="five-day-td">
           <td>
-            <img id= "weatherIcon1" src="#" alt="weather icon" />
+            <img id="weatherIcon1" src="#" alt="weather icon" />
           </td>
           <td>
-            <img id= "weatherIcon2" src="#" alt="weather icon" />
+            <img id="weatherIcon2" src="#" alt="weather icon" />
           </td>
           <td>
-            <img id= "weatherIcon3" src="#" alt="weather icon" />
+            <img id="weatherIcon3" src="#" alt="weather icon" />
           </td>
           <td>
-            <img id= "weatherIcon4" src="#" alt="weather icon" />
+            <img id="weatherIcon4" src="#" alt="weather icon" />
           </td>
           <td>
-            <img id= "weatherIcon5" src="#" alt="weather icon" />
+            <img id="weatherIcon5" src="#" alt="weather icon" />
           </td>
         </tr>
         <tr class="five-day-degree">
-          <td><span id = 'tempFive1'></span> &deg;F</td>
-          <td><span id = 'tempFive2'></span> &deg;F</td>
-          <td><span id = 'tempFive3'></span> &deg;F</td>
-          <td><span id = 'tempFive4'></span> &deg;F</td>
-          <td><span id = 'tempFive5'></span> &deg;F</td>
+          <td><span id="tempFive1"></span> &deg;F</td>
+          <td><span id="tempFive2"></span> &deg;F</td>
+          <td><span id="tempFive3"></span> &deg;F</td>
+          <td><span id="tempFive4"></span> &deg;F</td>
+          <td><span id="tempFive5"></span> &deg;F</td>
         </tr>
       </table>
 
       <article>
         <h4><strong>Travel Tips: 2019 Edition</strong></h4>
         <h5>By Sarahi Castro · gemsandpotatoes.com</h5>
-        <img 
-        src="https://gemsandpotatoes.files.wordpress.com/2019/01/chris-lawton-346402-unsplash.jpg?quality=80&strip=info&w=800" id="weatherImage"
+        <img
+          src="https://gemsandpotatoes.files.wordpress.com/2019/01/chris-lawton-346402-unsplash.jpg?quality=80&strip=info&w=800"
+          id="weatherImage"
           alt="Image of map and travel, used from gemsandpotatoes.com and unsplash.com"
         />
         <p>
-            I have now traveled for about 15 years (wow that makes me feel old) and that has provided me with quite a few life lessons along the way. I absolutely love traveling and allowing wanderlust to take over my mind, body, and soul – but there are a few things that I’ve come to realize are essential when traveling. Here are some tips that will hopefully make your travel life a bit easier: 
-            <br><br><strong>1. First and foremost: make sure you have all the necessary documents for travel</strong><br>
-…this includes your ID, your passport, insurance, etc. Make copies of all those documents. This will come in handy if you ever lose them or they get stolen. Also, as a second measure of preparedness, email them to yourself because it is entirely possible to not only lose your actual documents but to also lose the copies of those documents. 
-<br><br>*Looks down, ashamed.*<br><br>
-            <strong>2. Check the expiration date on your passport</strong><br><br>
-            Even if your passport doesn’t expire for another 5 months, there are countries that require your passport to be active for at least 6 months after your travel date. Example: Europe – they require the 6 months + a blank page (why not just a blank SPACE?) for a stamp. I’m not sure of how strict they are with the blank page, hopefully, someone from Europe can speak toward this. Heyyy Europe readers.
-        </p><a href="https://wordpress.com/read/blogs/149458525/posts/483">Keep Reading</a>
+          I have now traveled for about 15 years (wow that makes me feel old)
+          and that has provided me with quite a few life lessons along the way.
+          I absolutely love traveling and allowing wanderlust to take over my
+          mind, body, and soul – but there are a few things that I’ve come to
+          realize are essential when traveling. Here are some tips that will
+          hopefully make your travel life a bit easier:
+          <br /><br /><strong
+            >1. First and foremost: make sure you have all the necessary
+            documents for travel</strong
+          ><br />
+          …this includes your ID, your passport, insurance, etc. Make copies of
+          all those documents. This will come in handy if you ever lose them or
+          they get stolen. Also, as a second measure of preparedness, email them
+          to yourself because it is entirely possible to not only lose your
+          actual documents but to also lose the copies of those documents.
+          <br /><br />*Looks down, ashamed.*<br /><br />
+          <strong>2. Check the expiration date on your passport</strong
+          ><br /><br />
+          Even if your passport doesn’t expire for another 5 months, there are
+          countries that require your passport to be active for at least 6
+          months after your travel date. Example: Europe – they require the 6
+          months + a blank page (why not just a blank SPACE?) for a stamp. I’m
+          not sure of how strict they are with the blank page, hopefully,
+          someone from Europe can speak toward this. Heyyy Europe readers.
+        </p>
+        <a href="https://wordpress.com/read/blogs/149458525/posts/483"
+          >Keep Reading</a
+        >
       </article>
-      <article class='cityData'>
-        <h2><span id='newHead1'></span> Events</h2>
-        <div id='cityList'>
-        <ul id='newMess'>
-          
-          
-        </ul> 
-        
-        <div id="cityDataimg">
-        <img src="images/soda-springs-page-marina-khrapova-317302-unsplash.jpg" alt="girl holding flower"/>
+      <article class="cityData">
+        <h2><span id="newHead1"></span> Events</h2>
+        <div id="cityList">
+          <ul id="newMess"></ul>
+
+          <div id="cityDataimg">
+            <img
+              src="images/soda-springs-page-marina-khrapova-317302-unsplash.jpg"
+              alt="girl holding flower"
+            />
+          </div>
         </div>
-        </div>
-      </article>  
+      </article>
     </main>
 
     <aside>
@@ -183,23 +206,32 @@
         </ul>
       </div>
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46943.91298983955!2d-111.62379162735259!3d42.66147063530506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda+Springs%2C+ID+83276!5e0!3m2!1sen!2sus!4v1553225464064" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46943.91298983955!2d-111.62379162735259!3d42.66147063530506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda+Springs%2C+ID+83276!5e0!3m2!1sen!2sus!4v1553225464064"
+          frameborder="0"
+          style="border:0"
+          allowfullscreen
+        ></iframe>
       </div>
     </aside>
 
     <footer>
-        <p>
-            &copy;2019 | The Weather Sentry | Jeremy Hardman |
-            <a href="../../">Portal</a><br />
-            <a href="https://openweathermap.org/api">Weather Information</a><br />
-            <span id="currentdate"></span><br />
-          </p>
+      <p>
+        &copy;2019 | The Weather Sentry | Jeremy Hardman |
+        <a href="../../">Portal</a><br />
+        <a href="https://openweathermap.org/api">Weather Information</a><br />
+        <span id="currentdate"></span><br />
+      </p>
     </footer>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/weatherapi.js"></script>
     <script src="scripts/cityData.js"></script>
-    <script>getWeather("5607916")</script>
-    <script>getTownName("Soda Springs")</script>
+    <script>
+      getWeather('5607916')
+    </script>
+    <script>
+      getTownName('Soda Springs')
+    </script>
   </body>
 </html>

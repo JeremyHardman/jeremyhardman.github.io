@@ -7,8 +7,7 @@ function getTownName(townID) {
   var cityName,
     cities,
     i,
-    x = '',
-    myList = ''
+    x = ''
   var myPara1 = document.querySelector('newMess')
   var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json'
   var request = new XMLHttpRequest()

@@ -39,7 +39,9 @@
         <li><a href="home.html">Home</a></li>
         <li><a href="preston.html">Preston</a></li>
         <li><a href="sodasprings.html">Soda Springs</a></li>
-        <li id="activeName"><a class="active" href="fishhaven.html">Fish Haven</a></li>
+        <li id="activeName">
+          <a class="active" href="fishhaven.html">Fish Haven</a>
+        </li>
         <li><a href="stormcenter.html">Storm Center</a></li>
         <li><a href="gallery.html">Gallery</a></li>
       </ul>
@@ -50,19 +52,20 @@
       <div class="herocontainer">
         <div class="hero-img">
           <img
-          srcset="images/fish-haven-andrew-ly-662493-unsplash-320w.jpg 310w,
-          images/fish-haven-andrew-ly-662493-unsplash-620w.jpg 420w,
-          images/fish-haven-andrew-ly-662493-unsplash-840w.jpg 840w
-          "
-          alt="couple on beach near campfire"
-          sizes="90vw"/>
+            src="images/fish-haven-andrew-ly-662493-unsplash-840w.jpg"
+            sizes="50vw"
+            srcset="
+              images/fish-haven-andrew-ly-662493-unsplash-320w.jpg 310w,
+              images/fish-haven-andrew-ly-662493-unsplash-620w.jpg 420w,
+              images/fish-haven-andrew-ly-662493-unsplash-840w.jpg 840w
+            "
+            alt="couple on beach near campfire"
+          />
         </div>
         <section class="weathersummary">
           <h3 class="summarytittle">Weather Summary</h3>
           <ul>
-            <li>
-              Temperature: <span id="currentTemp"></span> &deg;F</span>
-            </li>
+            <li>Temperature: <span id="currentTemp"></span> &deg;F</li>
             <li>Condition: <span id="weatherDesc"></span></li>
             <li>Humidity: <span id="humidity"></span> %</li>
             <li>Wind Speed: <span id="windSpeed"></span> mph</li>
@@ -75,61 +78,73 @@
       <h2 id="five-day-tittle">5 Day Forecast</h2>
       <table class="five-day">
         <tr class="five-day-th">
-          <th><span id = 'day1'></span></th>
-          <th><span id = 'day2'></span></th>
-          <th><span id = 'day3'></span></th>
-          <th><span id = 'day4'></span></th>
-          <th><span id = 'day5'></span></th>
+          <th><span id="day1"></span></th>
+          <th><span id="day2"></span></th>
+          <th><span id="day3"></span></th>
+          <th><span id="day4"></span></th>
+          <th><span id="day5"></span></th>
         </tr>
         <tr class="five-day-td">
           <td>
-            <img id= "weatherIcon1" src="#" alt="weather icon" />
+            <img id="weatherIcon1" src="#" alt="weather icon" />
           </td>
           <td>
-            <img id= "weatherIcon2" src="#" alt="weather icon" />
+            <img id="weatherIcon2" src="#" alt="weather icon" />
           </td>
           <td>
-            <img id= "weatherIcon3" src="#" alt="weather icon" />
+            <img id="weatherIcon3" src="#" alt="weather icon" />
           </td>
           <td>
-            <img id= "weatherIcon4" src="#" alt="weather icon" />
+            <img id="weatherIcon4" src="#" alt="weather icon" />
           </td>
           <td>
-            <img id= "weatherIcon5" src="#" alt="weather icon" />
+            <img id="weatherIcon5" src="#" alt="weather icon" />
           </td>
         </tr>
         <tr class="five-day-degree">
-          <td><span id = 'tempFive1'></span> &deg;F</td>
-          <td><span id = 'tempFive2'></span> &deg;F</td>
-          <td><span id = 'tempFive3'></span> &deg;F</td>
-          <td><span id = 'tempFive4'></span> &deg;F</td>
-          <td><span id = 'tempFive5'></span> &deg;F</td>
+          <td><span id="tempFive1"></span> &deg;F</td>
+          <td><span id="tempFive2"></span> &deg;F</td>
+          <td><span id="tempFive3"></span> &deg;F</td>
+          <td><span id="tempFive4"></span> &deg;F</td>
+          <td><span id="tempFive5"></span> &deg;F</td>
         </tr>
       </table>
 
       <article>
         <h4><strong>Funny – Cee’s Fun Foto Challenge</strong></h4>
-        <h5>By Yinglan · <a href="https://wordpress.com/read/feeds/22760292">wordpress.com</a></h5>
-        <img 
-        src="https://yzhengblog.files.wordpress.com/2018/11/bear.jpg?w=664&h=1000" id="weatherImageF-H"
+        <h5>
+          By Yinglan ·
+          <a href="https://wordpress.com/read/feeds/22760292">wordpress.com</a>
+        </h5>
+        <img
+          src="https://yzhengblog.files.wordpress.com/2018/11/bear.jpg?w=664&h=1000"
+          id="weatherImageF-H"
           alt="Photo of carved bear holding an open sign. https://wordpress.com/read/blogs/46477938/posts/20440"
         />
-        <p>I went on a day trip yesterday. It wasn’t to any place new. I went to Bear Lake back in September, during Labor Day weekend. The only difference this time was I wasn’t the one driving and we went all the way to Montpelier, Idaho. Along the way, I saw an abundance of bear statues. I’m guessing it’s to honor the name of “Bear Lake”. <br><br>This cute bear statue was outside the restaurant we had lunch at in Paris, Idaho. I took this picture after everyone went into the restaurant. I can never resist a bear with that smile.
+        <p>
+          I went on a day trip yesterday. It wasn’t to any place new. I went to
+          Bear Lake back in September, during Labor Day weekend. The only
+          difference this time was I wasn’t the one driving and we went all the
+          way to Montpelier, Idaho. Along the way, I saw an abundance of bear
+          statues. I’m guessing it’s to honor the name of “Bear Lake”.
+          <br /><br />This cute bear statue was outside the restaurant we had
+          lunch at in Paris, Idaho. I took this picture after everyone went into
+          the restaurant. I can never resist a bear with that smile.
         </p>
       </article>
-      <article class='cityData'>
-        <h2><span id='newHead1'></span> Events</h2>
-        <div id='cityList'>
-        <ul id='newMess'>
-          
-          
-        </ul> 
-        
-        <div id="cityDataimg">
-        <img src="images/fish-haven-page-lonely-planet-973270-unsplash.jpg" alt="guy with map on adventure"/>
+      <article class="cityData">
+        <h2><span id="newHead1"></span> Events</h2>
+        <div id="cityList">
+          <ul id="newMess"></ul>
+
+          <div id="cityDataimg">
+            <img
+              src="images/fish-haven-page-lonely-planet-973270-unsplash.jpg"
+              alt="guy with map on adventure"
+            />
+          </div>
         </div>
-        </div>
-      </article>  
+      </article>
     </main>
 
     <aside>
@@ -177,23 +192,32 @@
         </ul>
       </div>
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11852.955858020297!2d-111.40486807165244!3d42.03805585404783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish+Haven%2C+ID+83287!5e0!3m2!1sen!2sus!4v1553225072902" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11852.955858020297!2d-111.40486807165244!3d42.03805585404783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish+Haven%2C+ID+83287!5e0!3m2!1sen!2sus!4v1553225072902"
+          frameborder="0"
+          style="border:0"
+          allowfullscreen
+        ></iframe>
       </div>
     </aside>
 
     <footer>
-        <p>
-            &copy;2019 | The Weather Sentry | Jeremy Hardman |
-            <a href="../../">Portal</a><br />
-            <a href="https://openweathermap.org/api">Weather Information</a><br />
-            <span id="currentdate"></span><br />
-          </p>
+      <p>
+        &copy;2019 | The Weather Sentry | Jeremy Hardman |
+        <a href="../../">Portal</a><br />
+        <a href="https://openweathermap.org/api">Weather Information</a><br />
+        <span id="currentdate"></span><br />
+      </p>
     </footer>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/weatherapi.js"></script>
     <script src="scripts/cityData.js"></script>
-    <script>getWeather("5585010")</script>
-    <script>getTownName("Fish Haven")</script>
+    <script>
+      getWeather('5585010')
+    </script>
+    <script>
+      getTownName('Fish Haven')
+    </script>
   </body>
 </html>

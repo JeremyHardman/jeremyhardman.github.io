@@ -49,21 +49,21 @@
       <h1 class="townname">Preston Idaho</h1>
       <div class="herocontainer">
         <div class="hero-img">
-          <img src="images/cit230_image_franklinOriginal_840w.jpg"
-          sizes="50vw"
-          srcset="images/cit230_image_franklinOriginal_310w.jpg 310w,
-          images/cit230_image_franklinOriginal_420w.jpg 420w,
-          images/cit230_image_franklinOriginal_840w.jpg 840w
-          "
-          alt="sunny day overlooking a grass field"
+          <img
+            src="images/cit230_image_franklinOriginal_840w.jpg"
+            sizes="50vw"
+            srcset="
+              images/cit230_image_franklinOriginal_310w.jpg 310w,
+              images/cit230_image_franklinOriginal_420w.jpg 420w,
+              images/cit230_image_franklinOriginal_840w.jpg 840w
+            "
+            alt="sunny day overlooking a grass field"
           />
         </div>
         <section class="weathersummary">
           <h3 class="summarytittle">Weather Summary</h3>
           <ul>
-            <li>
-              Temperature: <span id="currentTemp"></span> &deg;F</span>
-            </li>
+            <li>Temperature: <span id="currentTemp"></span> &deg;F</li>
             <li>Condition: <span id="weatherDesc"></span></li>
             <li>Humidity: <span id="humidity"></span> %</li>
             <li>Wind Speed: <span id="windSpeed"></span> mph</li>
@@ -76,43 +76,44 @@
       <h2 id="five-day-tittle">5 Day Forecast</h2>
       <table class="five-day">
         <tr class="five-day-th">
-          <th><span id = 'day1'></span></th>
-          <th><span id = 'day2'></span></th>
-          <th><span id = 'day3'></span></th>
-          <th><span id = 'day4'></span></th>
-          <th><span id = 'day5'></span></th>
+          <th><span id="day1"></span></th>
+          <th><span id="day2"></span></th>
+          <th><span id="day3"></span></th>
+          <th><span id="day4"></span></th>
+          <th><span id="day5"></span></th>
         </tr>
         <tr class="five-day-td">
           <td>
-            <img id= "weatherIcon1" src="#" alt="weather icon" />
+            <img id="weatherIcon1" src="#" alt="weather icon" />
           </td>
           <td>
-            <img id= "weatherIcon2" src="#" alt="weather icon" />
+            <img id="weatherIcon2" src="#" alt="weather icon" />
           </td>
           <td>
-            <img id= "weatherIcon3" src="#" alt="weather icon" />
+            <img id="weatherIcon3" src="#" alt="weather icon" />
           </td>
           <td>
-            <img id= "weatherIcon4" src="#" alt="weather icon" />
+            <img id="weatherIcon4" src="#" alt="weather icon" />
           </td>
           <td>
-            <img id= "weatherIcon5" src="#" alt="weather icon" />
+            <img id="weatherIcon5" src="#" alt="weather icon" />
           </td>
         </tr>
         <tr class="five-day-degree">
-          <td><span id = 'tempFive1'></span> &deg;F</td>
-          <td><span id = 'tempFive2'></span> &deg;F</td>
-          <td><span id = 'tempFive3'></span> &deg;F</td>
-          <td><span id = 'tempFive4'></span> &deg;F</td>
-          <td><span id = 'tempFive5'></span> &deg;F</td>
+          <td><span id="tempFive1"></span> &deg;F</td>
+          <td><span id="tempFive2"></span> &deg;F</td>
+          <td><span id="tempFive3"></span> &deg;F</td>
+          <td><span id="tempFive4"></span> &deg;F</td>
+          <td><span id="tempFive5"></span> &deg;F</td>
         </tr>
       </table>
 
       <article>
         <h4>Active Pattern Will Bring Chances for More Snow Into Next Week</h4>
         <h5>By Linda Lam · weather.com</h5>
-        <img 
-        src="images/weather-article-photo.jpg" id="weatherImage"
+        <img
+          src="images/weather-article-photo.jpg"
+          id="weatherImage"
           alt="Weather Forcast Image https://weather.com/safety/winter/news/2019-02-15-active-pattern-snow-ice-west-plains-midwest-northeast"
         />
         <p>
@@ -133,19 +134,19 @@
           its snowiest February on record (since 1970).
         </p>
       </article>
-      <article class='cityData'>
-        <h2><span id='newHead1'></span> Events</h2>
-        <div id='cityList'>
-        <ul id='newMess'>
-          
-          
-        </ul> 
-        
-        <div id="cityDataimg">
-        <img src="images/david-calderon-973699-unsplash.jpg" alt="girl dancing at festival"/>
+      <article class="cityData">
+        <h2><span id="newHead1"></span> Events</h2>
+        <div id="cityList">
+          <ul id="newMess"></ul>
+
+          <div id="cityDataimg">
+            <img
+              src="images/david-calderon-973699-unsplash.jpg"
+              alt="girl dancing at festival"
+            />
+          </div>
         </div>
-        </div>
-      </article>  
+      </article>
     </main>
 
     <aside>
@@ -214,7 +215,11 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/weatherapi.js"></script>
     <script src="scripts/cityData.js"></script>
-    <script>getWeather("5604473")</script>
-    <script>getTownName("Preston")</script>
+    <script>
+      getWeather('5604473')
+    </script>
+    <script>
+      getTownName('Preston')
+    </script>
   </body>
 </html>

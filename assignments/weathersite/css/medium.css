@@ -29,16 +29,16 @@
   }
 
   #cityDataimg {
-    grid-area: cityLeft;
+    grid-area: cityLt;
   }
 
   #newMess {
-    grid-area: cityRight;
+    grid-area: cityRt;
   }
 
   #cityList {
     display: grid;
-    grid: 'cityLeft cityRight';
+    grid: 'cityLt cityRt';
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
