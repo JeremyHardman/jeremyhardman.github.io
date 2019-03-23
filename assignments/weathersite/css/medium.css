@@ -38,7 +38,7 @@
 
   #cityList {
     display: grid;
-    grid: 'cityLt cityRt';
+    grid-template-areas: 'cityLt cityRt';
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
