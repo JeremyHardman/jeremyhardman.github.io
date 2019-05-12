@@ -1,9 +1,6 @@
 // City Data API JSON FILE
 
-
-
 function getTownName(townID) {
-
   var cityName,
     cities,
     i,
@@ -15,7 +12,7 @@ function getTownName(townID) {
   request.responseType = 'json'
   request.send()
 
-  request.onload = function () {
+  request.onload = function() {
     var cityData = request.response
     populateCity(cityData)
   }
@@ -27,7 +24,6 @@ function getTownName(townID) {
       if (cities[cityName].name == townID) showCities(cities[cityName])
     }
   }
-
   function showCities(jsonObj) {
     var data = jsonObj
     var townEventData = jsonObj['events']
